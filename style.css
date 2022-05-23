@@ -1,0 +1,90 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/gogo-full.png);
+    background-color: #03989E;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 5vh;
+    border-bottom: black solid 2px;
+    position: sticky;
+    top: 0;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #03989E;
+}
+
+nav a {
+    padding: 0.5vh 1vw;
+    margin: 2vh 1vw 0 1vw;
+    background-color: rgba(4, 185, 191, 0.5);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}
+
+nav a:hover {
+    text-shadow: black 0px 0px 2px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    width: 30vw;
+    height: 70vh;
+    text-align: left;
+}
+
+div {
+    margin: 2vh 0 2vh 0;
+}
+
+#text {
+    width: 100%;
+    height: 50%;
+}
+
+textarea {
+    border-radius: 10px;
+    padding: 1vw;
+    width: 100%;
+    height: 90%;
+    opacity: 0.7;
+}
+
+label {
+    display: block;
+}
+
+label {
+    padding: 0 0 0.2vw 0;
+}
+
+#date, #time {
+    border-radius: 10px;
+    height: 3vh;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+article {
+    display: inline-flex;
+}
+
+.reservierung {
+    margin-right: 2vw;
+}
