@@ -13,32 +13,47 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="karte.html">Speisen & Getränke</a>
+        <a href="inpressionen.html">Impressionen</a>
         <a href="kontakt.html">Kontakt</a>
     </nav>
     <header>
         <h1>Kontaktieren Sie mich</h1>
     </header>
     <main>
-        <form action="">
+        <form action="https://formspree.io/f/xqknnkrr" method="post">
             <fieldset>
-                <div>
                     <h3>Reservieren:</h3>
                     <article>
-                        <section class="reservierung">
-                            <label for="date">Datum der Reservierung:</label>
-                            <input type="date" name="date" id="date">
+                        <section>
+                            <label for="email">Ihre Email*</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Ihre Email" required>
                         </section>
                         <section>
-                            <label for="uhrzeit">Uhrzeit der Reservierung:</label>
-                            <input type="time" id="time" name="time">
+                            <label for="name">Ihr Name*</label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="Ihr Name" required>
                         </section>
                     </article>
-                </div>
-                <div id="text">
+                    <article>
+                        <section>
+                            <label for="date">Datum der Reservierung:*</label>
+                            <br>
+                            <input type="date" name="date" id="date" required>
+                        </section>
+                        <section>
+                            <label for="uhrzeit">Uhrzeit der Reservierung:*</label>
+                            <br>
+                            <input type="time" id="time" name="time" required>
+                        </section>
+                    </article>
+                <section>
                     <label for="nachricht">Ihre Nachricht an mich:</label>
+                    <br>
                     <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht"></textarea>
-                </div>
+                </section>
             </fieldset>
+            <button type="submit">Senden</button>
         </form>
     </main>
     <footer>

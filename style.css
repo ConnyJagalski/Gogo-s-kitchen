@@ -1,90 +1,76 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(images/gogo-full.png);
-    background-color: #03989E;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    box-sizing: border-box;
-}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 192, 203, 0.7), rgba(3, 152, 158, 0.7)), url(images/gogo-light.png);
+        background-position: center;
+        align-items: center;
+    }
 
-nav {
-    width: 100vw;
-    height: 5vh;
-    border-bottom: black solid 2px;
-    position: sticky;
-    top: 0;
-    display: inline-flex;
-    justify-content: center;
-    background-color: #03989E;
-}
+    nav {
+        display: flex;
+        justify-content: center;
+    }
 
-nav a {
-    padding: 0.5vh 1vw;
-    margin: 2vh 1vw 0 1vw;
-    background-color: rgba(4, 185, 191, 0.5);
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 2vh;
-}
+    nav a {
+        background-color: rgba(3, 152, 158, 0.1);
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 30px 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
 
-nav a:hover {
-    text-shadow: black 0px 0px 2px;
-}
+    header {
+        display: flex;
+        justify-content: center;
+    }
 
-main {
-    display: flex;
-    justify-content: center;
-}
+    main {
+        display: flex;
+        justify-content: center;
+    }
 
-fieldset {
-    border: none;
-    width: 30vw;
-    height: 70vh;
-    text-align: left;
-}
+    form {
+        text-align: center;
+        width: 90vw;
+        font-size: 20px;
+    }
 
-div {
-    margin: 2vh 0 2vh 0;
-}
+    fieldset {
+        border: none;
+        text-align: left;
+    }
 
-#text {
-    width: 100%;
-    height: 50%;
-}
+    section {
+        display: block;
+        margin: 15px 0;
+    }
 
-textarea {
-    border-radius: 10px;
-    padding: 1vw;
-    width: 100%;
-    height: 90%;
-    opacity: 0.7;
-}
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: rgba(3, 152, 158, 0.1);
+        font-size: 20px;
+    }
 
-label {
-    display: block;
-}
+    input::placeholder, textarea::placeholder {
+        padding-left: 5px;
+    }
 
-label {
-    padding: 0 0 0.2vw 0;
-}
+    textarea {
+        max-width: 90vw;
+        height: 5em;
+    }
 
-#date, #time {
-    border-radius: 10px;
-    height: 3vh;
-    padding: 0.5vw;
-    box-sizing: border-box;
-    opacity: 0.7;
-}
-
-article {
-    display: inline-flex;
-}
-
-.reservierung {
-    margin-right: 2vw;
+    button {
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: rgba(3, 152, 158, 0.1);
+        font-size: 20px;
+    }
 }
