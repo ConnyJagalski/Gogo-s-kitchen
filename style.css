@@ -3,7 +3,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 192, 203, 0.7), rgba(3, 152, 158, 0.7)), url(images/gogo-light.png);
+    background-image: linear-gradient(rgba(255, 192, 203, 0.7), rgba(3, 152, 158, 0.7)), url(/images/gogo-light.png);
     background-position: center;
     align-items: center;
 }
