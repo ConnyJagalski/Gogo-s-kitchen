@@ -7,19 +7,25 @@
     <meta name="author" content="Conny Jagalski">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d4980cf4e1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <title>Gogo's Kitchen</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="karte.html">Karte</a>
-        <a href="impressionen.html">Impressionen</a>
-        <a href="kontakt.html">Kontakt</a>
+        <img src="/images/logo.png" alt="Logo">
+        <h4>Gogo's Kitchen - Eat different</h4>
+        <div class="dropdown">
+            <button>Menü</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="karte.html">Karte</a>
+                <a href="impressionen.html">Impressionen</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
     </nav>
-    <header>
-        <h1>Impressionen</h1>
-    </header>
     <main class="impress">
+        <h1>Impressionen</h1>
         <div class="video">
             <video controls src="images/vorspeisenteller.mp4" id="vorspeise" type="video/mp4" muted></video>
             <video controls src="images/pfannen.mp4" type="video/mp4" muted></video>
@@ -42,7 +48,9 @@
         </div>
     </main>
     <footer>
-
+        <p>
+            Aktuell bin ich mit dem Smoker unterwegs! <a href="tel: +4917673583109">Rufen Sie mich an!</a> Ich stehe auch gerne auf Ihrer Veranstaltung!
+        </p>
     </footer>
 </body>
 </html>

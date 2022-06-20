@@ -7,35 +7,41 @@
     <meta name="author" content="Conny Jagalski">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d4980cf4e1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <title>Gogo's Kitchen</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="karte.html">Karte</a>
-        <a href="impressionen.html">Impressionen</a>
-        <a href="kontakt.html">Kontakt</a>
+        <img src="/images/logo.png" alt="Logo">
+        <h4>Gogo's Kitchen - Eat different</h4>
+        <div class="dropdown">
+            <button>Menü</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="karte.html">Karte</a>
+                <a href="impressionen.html">Impressionen</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
     </nav>
-    <header>
-        <div>
+    <main>
+        <header>
             <h1>Kontaktieren Sie mich</h1>
             <p>
                 Gogo's Kitchen
                 <br>
-                Straße dingens
+                Wickrathberger Str. 10
                 <br>
-                Ort sowieso
+                41189 Mönchengladbach
                 <br>
-                028767483294
+                +49176 735 83 109
                 <br>
-                mail@dingens.com
+                gogos.kitchen@gmail.com
             </p>
-        </div>
-    </header>
-    <main>
+        </header>
         <form action="https://formspree.io/f/xqknnkrr" method="post">
             <fieldset>
-                    <h3>Reservieren:</h3>
+                    <h3>Oder schreiben Sie mir direkt eine Nachricht:</h3>
                     <article>
                         <section>
                             <label for="email">Ihre Email*</label>
@@ -47,17 +53,10 @@
                             <br>
                             <input type="text" name="name" id="name" placeholder="Ihr Name" required>
                         </section>
-                    </article>
-                    <article>
                         <section>
-                            <label for="date">Datum der Reservierung:*</label>
+                            <label for="telefon">Ihre Telefon-/Mobilnummer*</label>
                             <br>
-                            <input type="date" name="date" id="date" required>
-                        </section>
-                        <section>
-                            <label for="uhrzeit">Uhrzeit der Reservierung:*</label>
-                            <br>
-                            <input type="time" id="time" name="time" required>
+                            <input type="tel" name="telefon" id="telefon" placeholder="Handynummer" required>
                         </section>
                     </article>
                 <section>
@@ -70,7 +69,9 @@
         </form>
     </main>
     <footer>
-
+        <p>
+            Aktuell bin ich mit dem Smoker unterwegs! <a href="tel: +4917673583109">Rufen Sie mich an!</a> Ich stehe auch gerne auf Ihrer Veranstaltung!
+        </p>
     </footer>
 </body>
 </html>
