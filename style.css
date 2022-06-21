@@ -77,9 +77,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
     overflow: scroll;
     margin-top: 20px;
+    height: 75%;
 }
 
 footer {
@@ -88,6 +88,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
+    height: min-content;
     background: rgba(22, 139, 134, 0.2);
 }
 
@@ -171,14 +172,13 @@ button {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    height: 75%;
 }
 
 .video {
     margin-bottom: 10px;
 }
 
-.video, .bilder {
+.bilder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -188,4 +188,5 @@ video, img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
