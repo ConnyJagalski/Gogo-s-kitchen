@@ -90,6 +90,7 @@ footer {
     width: 100vw;
     height: min-content;
     background: rgba(22, 139, 134, 0.2);
+    z-index: 2;
 }
 
 footer p {
