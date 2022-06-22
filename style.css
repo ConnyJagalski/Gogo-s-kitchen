@@ -25,6 +25,10 @@ nav h4 {
     margin: 0;
 }
 
+.tel {
+    font-size: 150%;
+}
+
 nav img {
     border-radius: 50%;
     height: 40px;
@@ -45,7 +49,7 @@ nav button {
     background-color: rgba(22, 139, 134, 0.6);
 }
 
-nav a {
+.dropdown-content a {
     background-color: rgba(22, 99, 102, 0.9);
     border-radius: 10px;
     padding: 5px 8px;
@@ -82,6 +86,10 @@ main {
     height: 75%;
 }
 
+main img {
+    max-width: 90vw;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -89,8 +97,7 @@ footer {
     bottom: 0;
     width: 100vw;
     height: min-content;
-    background: rgba(22, 139, 134, 0.2);
-    z-index: 2;
+    background: rgb(83, 189, 183);
 }
 
 footer p {
