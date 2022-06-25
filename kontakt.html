@@ -5,73 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Conny Jagalski">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d4980cf4e1.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <title>Gogo's Kitchen</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-        <h4>Gogo's Kitchen</h4>
-        <a href="tel:+49176 735 83 109"><i class="fa-solid fa-phone-flip"></i></a>
-        <div class="dropdown">
-            <button>Menü</button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="impressionen.html">Impressionen</a>
-                <a href="kontakt.html">Kontakt</a>
+    <main class="container-fluid vh-100">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Firmenlogo" class="logo">
+              </a>
+              <h3 class="me-2">Gogo's Kitchen</h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="impressionen.html">Impressionen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Veranstaltungen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+              </div>
             </div>
-        </div>
-    </nav>
-    <main>
-        <header>
-            <h1>Kontaktieren Sie mich</h1>
-            <p>
-                Gogo's Kitchen
-                <br>
-                Wickrathberger Str. 10
-                <br>
-                41189 Mönchengladbach
-                <br>
-                <a href="tel:+4917673583109">+49176 735 83 109</a>
-                <br>
-                info.gogos.kitchen@gmail.com
+          </nav>
+          <header class="text-center m-5">
+            <h2>Kontaktieren Sie mich</h2>
+          </header>
+          <main class="main-kontakt">
+            <div class="card mb-3 kontakt">
+              <div class="card-body">
+                Gogo's Kitchen <br>
+                Inh. Goran Milosevic <br>
+                Wickrathberger Str. 10 <br>
+                41189 Mönchengladbach <br>
+                info.gogos.kitchen@gmail.com <br>
+                <a href="tel:+4917673583109">0176 735 831 09</a>
+              </div>
+            </div>
+            <form action="https://formspree.io/f/mvolnbyv" method="post">
+              <fieldset>
+                      <h3>Oder schreiben Sie mir direkt eine Nachricht:</h3>
+                      <article>
+                          <section>
+                              <label for="email">Ihre Email*</label>
+                              <br>
+                              <input type="email" name="email" id="email" placeholder="Ihre Email" required>
+                          </section>
+                          <section>
+                              <label for="name">Ihr Name*</label>
+                              <br>
+                              <input type="text" name="name" id="name" placeholder="Ihr Name" required>
+                          </section>
+                          <section>
+                              <label for="telefon">Ihre Telefon-/Mobilnummer*</label>
+                              <br>
+                              <input type="tel" name="telefon" id="telefon" placeholder="Handynummer" required>
+                          </section>
+                      </article>
+                  <section>
+                      <label for="nachricht">Ihre Nachricht an mich:</label>
+                      <br>
+                      <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht"></textarea>
+                  </section>
+              </fieldset>
+              <button type="submit" class="fieldset-btn">Senden</button>
+          </form>
+          </main>
+          <footer class="fixed-bottom text-center">
+            <p class="p-3 m-0">Designed & Copyright by
+              <a href="https://connyjagalski.github.io/business-card/">Conny Jagalski</a>
             </p>
-        </header>
-        <form action="https://formspree.io/f/xqknnkrr" method="post">
-            <fieldset>
-                    <h3>Oder schreiben Sie mir direkt eine Nachricht:</h3>
-                    <article>
-                        <section>
-                            <label for="email">Ihre Email*</label>
-                            <br>
-                            <input type="email" name="email" id="email" placeholder="Ihre Email" required>
-                        </section>
-                        <section>
-                            <label for="name">Ihr Name*</label>
-                            <br>
-                            <input type="text" name="name" id="name" placeholder="Ihr Name" required>
-                        </section>
-                        <section>
-                            <label for="telefon">Ihre Telefon-/Mobilnummer*</label>
-                            <br>
-                            <input type="tel" name="telefon" id="telefon" placeholder="Handynummer" required>
-                        </section>
-                    </article>
-                <section>
-                    <label for="nachricht">Ihre Nachricht an mich:</label>
-                    <br>
-                    <textarea name="nachricht" id="nachricht" placeholder="Ihre Nachricht"></textarea>
-                </section>
-            </fieldset>
-            <button type="submit">Senden</button>
-        </form>
+          </footer>
     </main>
-    <footer>
-        <p>
-            Copyright & Design by <a href="https://connyjagalski.github.io/business-card/">Conny Jagalski</a>
-        </p>
-    </footer>
 </body>
 </html>

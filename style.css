@@ -1,200 +1,68 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(3, 152, 158, 0.8), rgba(3, 153, 158, 0.2)), url(images/gogo-light.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(3, 152, 158), rgba(3, 153, 158, 0.2)), url(images/logo-xl-light.png);
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(22, 139, 134, 0.5);
+    background-color: rgb(44, 171, 175);
 }
 
-nav h4 {
-    margin: 0;
-}
-
-.tel {
-    font-size: 150%;
-}
-
-nav img {
+.logo {
+    width: 3rem;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin: 10px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-}
-
-nav button {
-    font-family: inherit;
-    margin: 0;
-    border: none;
-    background-color: rgba(22, 139, 134, 0.6);
-}
-
-.dropdown-content a {
-    background-color: rgba(22, 99, 102, 0.9);
-    border-radius: 10px;
-    padding: 5px 8px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.815);
-    font-weight: bold;
-    display: block;
-    margin-top: 1px;
-    text-align: center;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: -10px;
-    z-index: 1;
-    margin-top: 15px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-h1 {
-    font-size: 25px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    margin-top: 20px;
-    height: 75%;
-}
-
-main img {
-    max-width: 90vw;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: min-content;
-    background: rgb(83, 189, 183);
+    background-color: rgb(46, 174, 179);
 }
 
-footer p {
-    width: 90vw;
+.main-impress, .main-kontakt {
+    padding-bottom: 5rem;
 }
 
-
-/**Ab hier index.html**/
-
-p {
-    width: 70vw;
-    text-align: center;
+.impress-pic {
+    width: 30%;
+    min-width: 150px;
 }
 
-hr {
+.big-pic {
+    width: 100%;
+}
+
+video {
     width: 80%;
 }
 
-article {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.kontakt {
+    max-width: fit-content;
+    opacity: 0.7;
 }
 
-.standort {
-    line-height: 25px;
-    width: 100%;
-}
-
-/**Ab hier kontakt.html**/
-
-form {
-    text-align: center;
-    width: 80vw;
-    font-size: 15px;
-}
-
-fieldset {
-    border: none;
-    text-align: left;
-}
-
-section {
-    display: block;
-    margin: 5px 0;
-}
-
-article section {
-    width: 100%;
-}
-
-input, textarea {
-    width: 100%;
+input, textarea, .fieldset-btn {
     box-sizing: border-box;
     border-radius: 5px;
+    width: 100%;
     background-color: rgba(3, 152, 158, 0.1);
-    font-size: 15px;
+}
+
+.fieldset-btn {
+    max-width: 10rem;
 }
 
 input::placeholder, textarea::placeholder {
     padding-left: 5px;
 }
 
-textarea {
-    max-width: 80vw;
-    height: 5em;
-}
 
-button {
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: rgba(3, 152, 158, 0.1);
-    font-size: 15px;
-    font-weight: bold;
-}
+@media (min-width: 768px){
+    video {
+        width: 50%;
+    }
 
-/**Ab hier impressionen.html**/
-
-.impress {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.video {
-    margin-bottom: 10px;
-}
-
-.bilder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-video, img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    input, textarea {
+        max-width: 50%;
+    }
 }
