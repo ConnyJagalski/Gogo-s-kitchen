@@ -26,6 +26,7 @@ footer {
 .impress-pic {
     width: 30%;
     min-width: 150px;
+    object-fit: cover;
 }
 
 .big-pic {
